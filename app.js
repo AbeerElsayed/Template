@@ -22,9 +22,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 // app.use('/', indexRouter);
 // app.use('/users', usersRouter);
 
-app.get('/*', function(req,res) {
+app.get('/temp', function(req,res) {
   res.sendFile(path.join(__dirname,'/src/template.html'));
 });
+
+ app.get('/form', function(req,res) {
+   res.sendFile(path.join(__dirname,'/src/form.html'));
+ });
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
