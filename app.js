@@ -26,9 +26,9 @@ app.get('/temp', function(req,res) {
   res.sendFile(path.join(__dirname,'/src/template.html'));
 });
 
- app.get('/form', function(req,res) {
-   res.sendFile(path.join(__dirname,'/src/form.html'));
- });
+app.get('/form', function(req,res) {
+  res.sendFile(path.join(__dirname,'/src/test.html'));
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
